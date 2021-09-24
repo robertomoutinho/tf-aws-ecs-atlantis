@@ -18,7 +18,7 @@ data "aws_iam_policy_document" "ecs_tasks" {
 }
 
 resource "aws_iam_role" "ecs_task_execution" {
-  name               = "${var.name}-ecs_task_execution"
+  name               = "${var.name}-ecs-task-execution"
   assume_role_policy = data.aws_iam_policy_document.ecs_tasks.json
   tags               = local.local_tags
 }
@@ -51,8 +51,7 @@ data "aws_iam_policy_document" "ecs_task_assume_role" {
     effect = "Allow"
 
     resources = [
-      "arn:aws:iam::871771849530:role/Terraform",
-      "arn:aws:iam::716970508795:role/Terraform",
+      "arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/Terraform"
     ]
 
     actions = [

@@ -34,7 +34,7 @@ This repository contains Terraform infrastructure code which creates AWS resourc
 | <a name="module_alb_http_sg"></a> [alb\_http\_sg](#module\_alb\_http\_sg) | terraform-aws-modules/security-group/aws//modules/http-80 | v3.18.0 |
 | <a name="module_alb_https_sg"></a> [alb\_https\_sg](#module\_alb\_https\_sg) | terraform-aws-modules/security-group/aws//modules/https-443 | v3.18.0 |
 | <a name="module_atlantis_sg"></a> [atlantis\_sg](#module\_atlantis\_sg) | terraform-aws-modules/security-group/aws | v3.18.0 |
-| <a name="module_container_definition_github"></a> [container\_definition\_github](#module\_container\_definition\_github) | cloudposse/ecs-container-definition/aws | v0.56.0 |
+| <a name="module_container_definition_github"></a> [container\_definition\_github](#module\_container\_definition\_github) | cloudposse/ecs-container-definition/aws | v0.58.1 |
 
 ## Resources
 

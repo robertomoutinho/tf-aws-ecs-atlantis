@@ -31,7 +31,7 @@ resource "aws_ecs_service" "atlantis" {
 
 module "container_definition_github" {
   source  = "cloudposse/ecs-container-definition/aws"
-  version = "v0.56.0"
+  version = "v0.58.1"
 
   container_name  = var.name
   container_image = local.atlantis_image
